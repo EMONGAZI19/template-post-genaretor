@@ -57,3 +57,20 @@ textarea#output {
   padding: 10px;
   border-radius: 5px;
 }
+
+.output-area {
+  position: relative;
+}
+
+#copyBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #00ffee;
+  color: #000;
+  padding: 5px 10px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
