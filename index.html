@@ -1,17 +1,20 @@
-<!DOCTYPE html>
-<html lang="bn">
+<!DOCTYPE html><html lang="bn">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Movie Post Generator</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#00ffee" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="MovieGen">
+  <link rel="apple-touch-icon" href="icon-192.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>Movie Post HTML Generator</h1>
-  </header>
-
-  <main>
+  </header>  <main>
     <form id="movieForm">
       <input type="text" placeholder="Movie Title (EN)" id="title" required>
       <input type="text" placeholder="Release Year" id="year" required>
@@ -30,19 +33,13 @@
       <input type="url" placeholder="Download 720p URL" id="d720" required>
       <input type="url" placeholder="Download 1080p URL" id="d1080" required>
       <button type="submit">Generate HTML</button>
-    </form>
+    </form><h2>Generated HTML:</h2>
+<div class="output-area">
+  <textarea id="output" rows="30" readonly></textarea>
+  <button id="copyBtn">Copy</button>
+</div>
 
-    <h2>Generated HTML:</h2>
-    <div class="output-area">
-      <textarea id="output" rows="30" readonly></textarea>
-      <button id="copyBtn">Copy</button>
-    </div>
-  </main>
-
-  <footer>
+  </main>  <footer>
     &copy; 2025 Movie Flix Generator
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+  </footer>  <script src="script.js"></script></body>
 </html>
