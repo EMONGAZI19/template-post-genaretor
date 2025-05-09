@@ -1,0 +1,20 @@
+{
+  "name": "Movie Post Generator",
+  "short_name": "MovieGen",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#111",
+  "theme_color": "#00ffee",
+  "icons": [
+    {
+      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhB7WzUDsJ_asJPQrT79qca5MlFF2kHF3mGzyYMSx17ncd-Kv04X1-vBOK&s=10",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.dribbble.com/userupload/42396578/file/original-f57912593b3f18b04e4fb0ea4a91b2cb.gif",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
