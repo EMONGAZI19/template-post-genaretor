@@ -9,7 +9,7 @@ document.getElementById('movieForm').addEventListener('submit', function (e) {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>The Bhootni (2025)</title>
+  <title>${getVal('title')} </title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali&display=swap" rel="stylesheet">
   <style>
     body {
