@@ -3,42 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Moviflix Post Generator</title>
+  <title>Movie HTML Generator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Moviflix Movie Post Generator</h1>
-  </header>
-
-  <main>
+  <div class="container">
+    <h1>মুভি HTML জেনারেটর</h1>
     <form id="movieForm">
-      <input type="text" placeholder="Movie Title" id="title" required>
-      <input type="text" placeholder="Thumbnail Image URL" id="thumbnail" required>
-      <input type="text" placeholder="Watch Link" id="watch" required>
-      <input type="text" placeholder="Trailer Link" id="trailer" required>
-      <input type="text" placeholder="Quality" id="quality">
-      <input type="text" placeholder="Duration" id="duration">
-      <input type="text" placeholder="Language" id="language">
-      <input type="text" placeholder="Release Date" id="release">
-      <textarea placeholder="Plot" id="plot"></textarea>
-      <input type="text" placeholder="Screenshot 1 URL" id="ss1">
-      <input type="text" placeholder="Screenshot 2 URL" id="ss2">
-      <input type="text" placeholder="Screenshot 3 URL" id="ss3">
-      <input type="text" placeholder="Download Link 480p" id="dl480">
-      <input type="text" placeholder="Download Link 720p" id="dl720">
-      <input type="text" placeholder="Download Link 1080p" id="dl1080">
+      <label>মুভির নাম: <input type="text" id="title" required></label>
+      <label>রিলিজ তারিখ: <input type="text" id="releaseDate" required></label>
+      <label>ভাষা: <input type="text" id="language" required></label>
+      <label>কোয়ালিটি: <input type="text" id="quality" required></label>
+      <label>প্লট: <textarea id="plot" required></textarea></label>
+      <label>থাম্বনেইল লিংক: <input type="text" id="thumbnail" required></label>
+      <label>স্ক্রিনশট 1: <input type="text" id="ss1"></label>
+      <label>স্ক্রিনশট 2: <input type="text" id="ss2"></label>
+      <label>স্ক্রিনশট 3: <input type="text" id="ss3"></label>
+      <label>Download 480p: <input type="text" id="d480"></label>
+      <label>Download 720p: <input type="text" id="d720"></label>
+      <label>Download 1080p: <input type="text" id="d1080"></label>
       <button type="submit">Generate HTML</button>
     </form>
 
-    <h2>Generated HTML Code:</h2>
-    <textarea id="output" rows="25" readonly></textarea>
-    <button id="copyBtn">Copy Code</button>
-  </main>
-
-  <footer>
-    &copy; 2025 Moviflix Post. All rights reserved.
-  </footer>
+    <h2>Generated HTML:</h2>
+    <textarea id="output" rows="30"></textarea>
+  </div>
 
   <script src="script.js"></script>
 </body>
