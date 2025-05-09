@@ -80,3 +80,13 @@ document.getElementById('movieForm').addEventListener('submit', function (e) {
 
   document.getElementById('output').value = html.trim();
 });
+
+document.getElementById('copyBtn').addEventListener('click', function () {
+  const output = document.getElementById('output');
+  output.select();
+  document.execCommand('copy');
+  this.textContent = 'Copied!';
+  setTimeout(() => {
+    this.textContent = 'Copy';
+  }, 2000);
+});
