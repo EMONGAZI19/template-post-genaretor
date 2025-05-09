@@ -3,63 +3,71 @@ body {
   background: #111;
   color: #fff;
   margin: 0;
-  padding: 20px;
+  padding: 0;
 }
 
-.container {
-  max-width: 700px;
-  margin: auto;
-  background: #1e1e1e;
+header {
+  background-color: #000;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px #00ffee55;
-}
-
-h1, h2 {
   text-align: center;
+  font-size: 1.5rem;
   color: #00ffee;
+  box-shadow: 0 2px 5px #00ffee44;
+}
+
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00ffee22;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-}
-
-label {
-  display: flex;
-  flex-direction: column;
-  font-weight: bold;
+  gap: 12px;
 }
 
 input, textarea {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  font-family: inherit;
+  background: #222;
+  color: #fff;
+  font-size: 1rem;
 }
 
 button {
-  padding: 10px;
-  background: #00ffee;
+  padding: 12px;
+  background-color: #00ffee;
   color: #000;
   font-weight: bold;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  box-shadow: 0 0 10px #00ffee88;
+  transition: background 0.3s ease;
 }
 
-textarea#output {
-  width: 100%;
-  background: #000;
-  color: #00ffee;
-  font-family: monospace;
-  padding: 10px;
-  border-radius: 5px;
+button:hover {
+  background-color: #00ddcc;
 }
 
 .output-area {
   position: relative;
+  margin-top: 20px;
+}
+
+#output {
+  width: 100%;
+  background: #222;
+  color: #00ffee;
+  padding: 15px;
+  font-family: monospace;
+  border: none;
+  border-radius: 8px;
 }
 
 #copyBtn {
@@ -73,4 +81,12 @@ textarea#output {
   font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
+}
+
+footer {
+  background-color: #000;
+  color: #888;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
 }
