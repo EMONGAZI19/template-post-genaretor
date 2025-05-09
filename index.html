@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Movie HTML Generator</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Movie Post Generator</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>মুভি HTML জেনারেটর</h1>
+  <header>
+    <h1>Movie Post HTML Generator</h1>
+  </header>
+
+  <main>
     <form id="movieForm">
-      <label>মুভির নাম: <input type="text" id="title" required></label>
-      <label>রিলিজ তারিখ: <input type="text" id="releaseDate" required></label>
-      <label>ভাষা: <input type="text" id="language" required></label>
-      <label>কোয়ালিটি: <input type="text" id="quality" required></label>
-      <label>প্লট: <textarea id="plot" required></textarea></label>
-      <label>থাম্বনেইল লিংক: <input type="text" id="thumbnail" required></label>
-      <label>স্ক্রিনশট 1: <input type="text" id="ss1"></label>
-      <label>স্ক্রিনশট 2: <input type="text" id="ss2"></label>
-      <label>স্ক্রিনশট 3: <input type="text" id="ss3"></label>
-      <label>Download 480p: <input type="text" id="d480"></label>
-      <label>Download 720p: <input type="text" id="d720"></label>
-      <label>Download 1080p: <input type="text" id="d1080"></label>
+      <input type="text" placeholder="Movie Title (EN)" id="title" required>
+      <input type="text" placeholder="Release Year" id="year" required>
+      <input type="text" placeholder="Quality" id="quality" required>
+      <input type="text" placeholder="Duration" id="duration" required>
+      <input type="text" placeholder="Language" id="language" required>
+      <input type="text" placeholder="Release Date" id="releaseDate" required>
+      <textarea placeholder="Plot Summary" id="plot" required></textarea>
+      <input type="url" placeholder="Thumbnail Image URL" id="thumbnail" required>
+      <input type="url" placeholder="Screenshot 1 URL" id="ss1" required>
+      <input type="url" placeholder="Screenshot 2 URL" id="ss2" required>
+      <input type="url" placeholder="Screenshot 3 URL" id="ss3" required>
+      <input type="url" placeholder="Watch Movie URL" id="watch" required>
+      <input type="url" placeholder="Trailer URL" id="trailer" required>
+      <input type="url" placeholder="Download 480p URL" id="d480" required>
+      <input type="url" placeholder="Download 720p URL" id="d720" required>
+      <input type="url" placeholder="Download 1080p URL" id="d1080" required>
       <button type="submit">Generate HTML</button>
     </form>
 
-    
-<h2>Generated HTML:</h2>
-<div class="output-area">
-  <textarea id="output" rows="30" readonly></textarea>
-  <button id="copyBtn">Copy</button>
-</div
+    <h2>Generated HTML:</h2>
+    <div class="output-area">
+      <textarea id="output" rows="30" readonly></textarea>
+      <button id="copyBtn">Copy</button>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Movie Flix Generator
+  </footer>
 
   <script src="script.js"></script>
 </body>
